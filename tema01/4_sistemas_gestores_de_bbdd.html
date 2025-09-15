@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4. Sistemas Gestores de BBDD | almacenamiento </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-5"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">almacenamiento</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inici</a></li>
+   <li class="current-page-parent"><a href="almacenamiento_de_la_informacin.html" class="current-page-parent daddy">Almacenamiento de la Información</a>
+   <ul>
+      <li><a href="1_almacenamiento_de_datos.html" class="no-ch">1. Almacenamiento de datos</a></li>
+      <li><a href="2_ficheros.html" class="no-ch">2. Ficheros</a></li>
+      <li><a href="3_base_de_datos.html" class="no-ch">3. Base de Datos</a></li>
+      <li id="active"><a href="4_sistemas_gestores_de_bbdd.html" class="active no-ch">4. Sistemas Gestores de BBDD</a></li>
+      <li><a href="5_bbdd_comerciales_y_libres.html" class="no-ch">5. BBDD comerciales y libres</a></li>
+      <li><a href="6_lopd.html" class="no-ch">6. LOPD</a></li>
+      <li><a href="7_bigdata.html" class="no-ch">7. BigData</a></li>
+   </ul>
+   </li>
+   <li><a href="emmagatzematge_de_la_informaci.html" class="daddy">Emmagatzematge de la Informació</a>
+   <ul class="other-section">
+      <li><a href="1_emmagatzematge_de_dades.html" class="no-ch">1. Emmagatzematge de dades</a></li>
+      <li><a href="2_fitxers.html" class="no-ch">2. Fitxers</a></li>
+      <li><a href="3_bases_de_dades.html" class="no-ch">3. Bases de Dades</a></li>
+      <li><a href="4_sistemes_gestors_de_bases_de_dades.html" class="no-ch">4. Sistemes Gestors de Bases de Dades</a></li>
+      <li><a href="5_bbdd_comercials_i_lliures.html" class="no-ch">5. BBDD comercials i lliures</a></li>
+      <li><a href="6_lopd0.html" class="no-ch">6. LOPD</a></li>
+      <li><a href="7_bigdata0.html" class="no-ch">7. BigData</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_base_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="5_bbdd_comerciales_y_libres.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4. Sistemas Gestores de BBDD</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id17">
+<div class="iDevice emphasis0" >
+<div id="ta17_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Sistema Gestor de Base de Datos (SGBD o DBMS): conjunto coordinado de programas, procedimientos, lenguajes, etc., que suministra, tanto a los usuarios no informáticos, como a los analistas, programadores, o al administrador, los medios necesarios para describir y manipular los datos contenidos en la base de datos, manteniendo su integridad, confidencialidad y seguridad.</p>
+<h2>Funciones</h2>
+<p>Un SGBD desarrolla tres funciones fundamentales:</p>
+<ul>
+<li><span style="color: #008000;"><strong>Función de descripción o definición</strong></span>: permite al diseñador de la base de datos <strong>crear las estructuras</strong> apropiadas <strong>para integrar adecuadamente los datos</strong>. Esta función se realiza mediante el <strong>lenguaje de descripción de datos</strong> o <span style="color: #0000ff;"><strong>DDL</strong></span>.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Función de manipulación</strong></span>: permite a los usuarios de la base <strong>buscar, añadir, suprimir o modificar los datos</strong> de la misma, siempre de acuerdo con las especificaciones y las normas de seguridad dictadas por el administrador. Se llevará a cabo por medio de un <strong>lenguaje de manipulación de datos</strong> ( <em><span style="color: #0000ff;">DML</span></em>) que facilita los instrumentos necesarios para la realización de estas tareas.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Función de control</strong></span>: permite al administrador de la base de datos <strong>establecer mecanismos de protección</strong> de las diferentes visiones de los datos asociadas a cada usuario, proporcionando elementos de creación y modificación de dichos usuarios. Adicionalmente, incorpora sistemas para la creación de copias de seguridad, carga de ficheros, auditoría, protección de ataques, configuración del sistema, etc. El lenguaje que implementa esta función es el <strong>lenguaje de control de datos</strong> o <span style="color: #0000ff;"><strong>DCL</strong></span>.</li>
+</ul>
+<h2>Componentes</h2>
+<p>Los SGBD suelen estar formados por <strong>varios componentes integrados</strong> que realizan tareas de gestión de datos:</p>
+<ul>
+<li><span style="color: #008000;"><strong>Motor de almacenamiento</strong></span>: es el elemento central de un SGBD que <strong>interactúa</strong> con el <strong>sistema de archivos</strong>  nivel del sistema operativo.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Lenguaje de consulta</strong></span>: permiten a los usuarios interactuar con las bases de datos (<em>ejemplo: SQL o  MQL</em>).<br /><br /></li>
+<li><span style="color: #008000;"><strong>Procesador de consultas</strong></span>: <strong>interpreta las consultas del usuario</strong> y hace que los comandos sean <strong>comprensibles para la base de datos</strong>.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Optimizador de consultas</strong></span>: proporciona ideas para <strong>mejorar el rendimiento</strong> de la base de datos y las consultas.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Diccionario de Datos</strong></span>: almacena todos los metadatos generados por una entidad, así como información sobre la estrutura de la BBDD. El diccionario se utiliza para verificar las solicitudes de los usuarios y proporcionar detalles sobre la estructura de la base de datos.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Administrador de registros</strong></span>: <strong>registra</strong> la <strong>actividad de los usuarios</strong>, los inicios de sesión, las copias de seguridad y otras acciones realizadas con el SGBD.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Herramientas de informes y monitorización</strong></span>. generan <strong>informes</strong> y <strong>supervisan el uso de los recursos</strong> del SGBD.<br /><br /></li>
+<li><span style="color: #008000;"><strong>Utilidades de datos</strong></span>. herramientas adicionales que realizan tareas de <strong>copia de seguridad</strong> y <strong>recuperación</strong>, <strong>validación</strong> de datos, <strong>reparación</strong> de bases de datos y <strong>comprobación de la integridad</strong> de los datos en tu servidor privado o compartido.</li>
+</ul>
+<p><img src="sgbd_99.png" alt="" width="716" height="665" /></p>
+<h2>Tipos</h2>
+<p>Lo visto en el apartado anterior de tipos de BBDD es aplicable a los SGBD.</p>
+<p></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_base_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="5_bbdd_comerciales_y_libres.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3. Bases de Dades | almacenamiento </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Fran Jaraba" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">almacenamiento</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inici</a></li>
+   <li><a href="almacenamiento_de_la_informacin.html" class="daddy">Almacenamiento de la Información</a>
+   <ul class="other-section">
+      <li><a href="1_almacenamiento_de_datos.html" class="no-ch">1. Almacenamiento de datos</a></li>
+      <li><a href="2_ficheros.html" class="no-ch">2. Ficheros</a></li>
+      <li><a href="3_base_de_datos.html" class="no-ch">3. Base de Datos</a></li>
+      <li><a href="4_sistemas_gestores_de_bbdd.html" class="no-ch">4. Sistemas Gestores de BBDD</a></li>
+      <li><a href="5_bbdd_comerciales_y_libres.html" class="no-ch">5. BBDD comerciales y libres</a></li>
+      <li><a href="6_lopd.html" class="no-ch">6. LOPD</a></li>
+      <li><a href="7_bigdata.html" class="no-ch">7. BigData</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="emmagatzematge_de_la_informaci.html" class="current-page-parent daddy">Emmagatzematge de la Informació</a>
+   <ul>
+      <li><a href="1_emmagatzematge_de_dades.html" class="no-ch">1. Emmagatzematge de dades</a></li>
+      <li><a href="2_fitxers.html" class="no-ch">2. Fitxers</a></li>
+      <li id="active"><a href="3_bases_de_dades.html" class="active no-ch">3. Bases de Dades</a></li>
+      <li><a href="4_sistemes_gestors_de_bases_de_dades.html" class="no-ch">4. Sistemes Gestors de Bases de Dades</a></li>
+      <li><a href="5_bbdd_comercials_i_lliures.html" class="no-ch">5. BBDD comercials i lliures</a></li>
+      <li><a href="6_lopd0.html" class="no-ch">6. LOPD</a></li>
+      <li><a href="7_bigdata0.html" class="no-ch">7. BigData</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="2_fitxers.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_sistemes_gestors_de_bases_de_dades.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3. Bases de Dades</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id32">
+<div class="iDevice emphasis0" >
+<div id="ta32_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Una <span style="color: #008000;"><strong>base de dades</strong></span> és una <strong>col·lecció estructurada d'informació</strong> que s'emmagatzema de manera <strong>organitzada</strong> per a permetre l'accés, la gestió i la recuperació eficients de dades.</p>
+<p>La base de dades no sols conté les dades de l'organització, també emmagatzema una <strong>descripció d'aquestes dades</strong>. Aquesta descripció és el que es denomina <strong><span style="text-decoration: underline;">metadades</span></strong>, s'emmagatzema en el <strong><span style="text-decoration: underline;">diccionari de dades o catàleg</span></strong>.</p>
+<p>Les bases de dades s'utilitzen en una varietat d'aplicacions, com a sistemes de gestió d'inventari, sistemes de gestió de clients, sistemes d'informació geogràfica (SIG), sistemes de reserves, sistemes de comptabilitat i moltes més. Proporcionen una forma eficient i estructurada d'emmagatzemar i gestionar dades, la qual cosa facilita l'accés i la recuperació d'informació important.</p>
+<p>L'ús de la BBDD és diferent segons la persona que la utilitze:</p>
+<ul>
+<li><strong>L'administrador</strong>: encarregat de la <span style="text-decoration: underline;">creació o implementació física de la base de dades</span>. És qui tria els tipus de fitxers, els índexs que cal crear, la ubicació d'aquests, etc. En general, és qui pren les decisions relacionades amb el funcionament físic de l'emmagatzematge d'informació.<br /><br /></li>
+<li><strong>Els dissenyadors</strong>: encarregats de <span style="text-decoration: underline;">dissenyar com serà la base de dades</span>. Duran a terme la <span style="text-decoration: underline;">identificació de les dades, les relacions entre ells, les seues restriccions</span>, etc. Per a això han de conéixer a fons les dades i processos a representar en la base de dades.<br /><br /></li>
+<li><strong>Els programadors</strong> d'aplicacions: s'encarregaran <span style="text-decoration: underline;">d'implementar els programes d'aplicació que serviran als usuaris finals</span>. Aquests programes d'aplicació oferiran la possibilitat de realitzar consultes de dades, inserció, actualització o eliminació d'aquests.<br /><br /></li>
+<li><strong>Els usuaris finals</strong>: són els <span style="text-decoration: underline;">clients finals de la base de dades</span>. En dissenyar, implementar i mantindre la base de dades es busca complir els requisits establits pel client per a la gestió de la seua informació.</li>
+</ul>
+<p></p>
+<h2>Tipus de BBDD</h2>
+<h3>A) Segons el model</h3>
+<p>Un <strong>model de base de dades</strong> mostra l'<strong>estructura lògica de la base</strong>, incloses les <span style="text-decoration: underline;">relacions i limitacions</span> que determinen com s'emmagatzemen les dades i com s'accedeix a ells    </p>
+<p><strong><span style="color: #008000;">Model Jeràrquic</span><br /></strong></p>
+<p style="padding-left: 30px;"><a href="almacenamiento09.png"><img src="almacenamiento09_peq.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="248" height="103" /></a>Les BBDD jeràrquiques<strong> s'emmagatzema la informació en una estructura jeràrquica</strong> o amb un ordre d'importància. Organitza les dades en una estructura d'arbre, en la qual cada registre té un únic element o arrel. Els registres del mateix nivell es classifiquen en un ordre específic. Eixe ordre s'usa a manera d'ordre físic per a emmagatzemar la base de dades. El model és bo per a descriure moltes relacions del món real. Va ser utilitzat per IBM en la dècada dels 70 però hui dia a penes s'usa.</p>
+<p><strong><span style="color: #008000;">Model en Xarxa</span><br /></strong></p>
+<p style="padding-left: 30px;"><img src="almacenamiento10.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="314" height="173" /></p>
+<p style="padding-left: 30px;">Tenen una <span style="text-decoration: underline;">gran semblança a les jeràrquiques</span>; la seua diferència principal en la composició del node. En aquest model els nodes poden tindre diversos pares.</p>
+<p style="padding-left: 30px;">En l'actualitat aquest tipus de base de dades no és usat amb freqüència</p>
+<p style="padding-left: 30px;"></p>
+<p><strong>Model Transaccional</strong></p>
+<p style="padding-left: 30px;">Aquestes bases de dades compleixen una funció molt específica. S'encarreguen de<span style="text-decoration: underline;"> l'enviament i recepció de dades a gran velocitat</span>. Sol utilitzar-se en els sistemes bancari que registren operacions d'intercanvi de diners entre comptes.</p>
+<p><span style="color: #008000;"><strong>Model relacional</strong></span></p>
+<p style="padding-left: 30px;"><img src="almacenamiento11.png" alt="" style="margin-right: 20px; margin-left: 20px; float: right;" width="362" height="413" />El centre d'aquest model de BBDD és l'ús de les “<strong>relacions</strong>” entre dades. El llenguatge predominant en aquestes bases de dades és el <strong>Structured Query Language</strong> conegut com <span style="color: #0000ff;"><strong>SQL</strong></span>. El seu funcionament radica a <strong>introduir totes les dades en registres</strong>, que posteriorment s'organitzen en <strong>taules</strong>. Aquestes BBDD són recomanables quan les dades que utilitzarem tenen un marge d'error nul i no requereixen modificacions constants.</p>
+<p><strong>Model orientat a objectes</strong></p>
+<p style="padding-left: 30px;">Aquest model defineix una base de dades com una <strong>col·lecció d'objectes</strong>, o elements de programari reutilitzable, amb funcions i mètodes relacionats. Hi ha diversos tipus de bases de dades orientades a objectes:</p>
+<ul>
+<li>Una base de dades <strong>multimèdia</strong> incorpora elements multimèdia, com ara imatges, que no es podrien emmagatzemar en una base de dades relacional.</li>
+<li>Una base de dades d'<strong>hipertext</strong> permet que qualsevol objecte es connecte a qualsevol altre objecte. És útil per a organitzar lots de dades diferents entre ells, però no és ideal per a anàlisi numèrica.</li>
+</ul>
+<p style="padding-left: 30px;">El model de base de dades orientat a objectes és el millor model conegut de base de dades postrelacional ja que incorpora taules, però no es limita a elles. A aquests models també se'ls coneix com a <strong>models de base de dades híbrids</strong>.</p>
+<p style="padding-left: 30px;"></p>
+<p><strong>Model de documents</strong></p>
+<p style="padding-left: 30px;">Les bases de dades documentals són un model interessant de conjunts d'informació que <span style="text-decoration: underline;">utilitzen documents com l'estructura d'emmagatzematge i consulta de dades</span>. Estan construïdes amb llenguatge <strong>NoSQL</strong> el que li proporciona un gran nombre d'avantatges tècnics i de flexibilitat. Permet el maneig de pesats volums d'informació en períodes mínims de temps. La seua diversitat de funcions i mòduls adaptables a múltiples mecanismes de consulta l'han convertida en un dels models preferits de treball en l'actualitat per part dels programadors.</p>
+<p><strong>Model deductiu</strong></p>
+<p style="padding-left: 30px;">Una base de dades deductiva és una BBDD que permet la possibilitat de fer deduccions a través d'una inferència. La seua funcionalitat depén de les condicions i fets que s'emmagatzemen en la base de dades. També són conegudes com a <strong>bases de dades lògiques</strong> ja que els seus principis estan fonamentats en la lògica matemàtica.</p>
+<p style="padding-left: 30px;">Naixen com a resposta a les limitacions que sorgeixen en les bases de dades relacionals a l'hora d'executar consultes recursives i teoritzar sobre les relacions indirectes que pogueren generar-se entre les dades emmagatzemades. Utilitza un llenguatge anomenat <strong>datalog</strong> que li permet a l'ordinador resoldre les deduccions per a contestar consultes.</p>
+<h3>B) Segons la distribució de la informació</h3>
+<p><strong>Centralitzades</strong></p>
+<p style="padding-left: 30px;"><img src="almacenamiento12.png" alt="" style="float: right; margin: 10px 20px 10px 20px;" width="345" height="161" />Una BBDD Centralitzada és un sistema de gestió de dades en el qual <span style="text-decoration: underline;">tota la informació s'emmagatzema i gestiona en un únic lloc</span> o <strong>servidor central</strong>. En aquest enfocament, totes les aplicacions i usuaris accedeixen a la base de dades centralitzada per a realitzar consultes, actualitzacions i altres operacions relacionades amb les dades. Avantatges:</p>
+<ul>
+<li>Un <strong>únic punt d'accés</strong>: tots els usuaris i aplicacions accedeixen a la mateixa base de dades central per a obtindre i modificar dades.</li>
+<li><strong>Control centralitzat</strong>: l'administració i el control de la base de dades resideixen en un únic lloc, la qual cosa <span style="text-decoration: underline;">facilita</span> la implementació de <span style="text-decoration: underline;">polítiques de seguretat i control d'accés</span>.</li>
+<li><strong>Consistència de dades</strong>: pel fet que totes les dades resideixen en un únic lloc, és més fàcil mantindre la <span style="text-decoration: underline;">integritat i la coherència</span> de les dades.</li>
+<li><strong>Senzillesa</strong>: en comparació amb sistemes distribuïts, les bases de dades centralitzades tendeixen a ser <span style="text-decoration: underline;">més simples d'administrar i mantindre</span>.</li>
+<li><strong>Més econòmic</strong>: tant en els recursos necessaris per a la seua implantació com en el manteniment.</li>
+</ul>
+<p style="padding-left: 30px;">No obstant això, les bases de dades centralitzades també tenen algunes <strong>limitacions</strong> i desafiaments, com:</p>
+<ul>
+<li><strong>Punts únics de fallada</strong>: si el <span style="text-decoration: underline;">servidor central falla</span> o experimenta problemes, pot <span style="text-decoration: underline;">afectar a totes les aplicacions i usuaris</span> que depenen d'ell.</li>
+<li><strong>Escalabilitat limitada</strong>: a mesura que la quantitat de dades i la càrrega de treball augmenten, una base de dades centralitzada pot arribar a ser insuficient i difícil d'escalar per a satisfer les necessitats creixents.</li>
+<li><strong>Latència</strong>: els usuaris i aplicacions que es troben lluny del servidor central poden experimentar latència en accedir a les dades.</li>
+<li><strong>Riscos de seguretat</strong>: la seguretat de la base de dades centralitzada és crucial, ja que un accés no autoritzat o un atac exitós pot comprometre totes les dades.</li>
+</ul>
+<p style="padding-left: 30px;">En molts casos, les organitzacions trien utilitzar bases de dades centralitzades quan tenen un conjunt de dades i requisits d'accés que es poden gestionar eficaçment d'aquesta manera. No obstant això, en entorns amb necessitats d'escalabilitat, alta disponibilitat o distribució geogràfica, poden optar per solucions de bases de dades distribuïdes o en el núvol per a abordar aquestes preocupacions.<br /><br /></p>
+<p><strong>SGBD Distribuides</strong></p>
+<p style="padding-left: 30px;"><img src="almacenamiento13.png" alt="" style="float: right; margin: 10px 20px 10px 20px;" width="450" height="468" /></p>
+<p style="padding-left: 30px;">Una base de dades distribuïda és un sistema de gestió de dades en el qual <strong>les dades s'emmagatzemen en múltiples ubicacions físiques</strong> o servidors interconnectats. <span style="text-decoration: underline;">Les dades es divideixen i repliquen entre múltiples nodes o servidors</span>. Cada node en la base de dades distribuïda pot tindre la seua pròpia capacitat de processament i emmagatzematge. Avantatges:</p>
+<ul>
+<li><strong>Distribució geogràfica</strong>: les dades s'emmagatzemen en diferents ubicacions geogràfiques, la qual cosa permet un <span style="text-decoration: underline;">accés més ràpid</span> a les dades per als usuaris en eixes àrees.<br /><br /></li>
+<li><strong>Alta disponibilitat</strong>: a causa de la redundància de dades en múltiples nodes, les bases de dades distribuïdes solen oferir una <span style="text-decoration: underline;">major disponibilitat i resistència a fallades</span>. Si un node falla, les dades encara estan disponibles en altres nodes.<br /><br /></li>
+<li><strong>Escalabilitat</strong>: és més fàcil escalar una base de dades distribuïda <span style="text-decoration: underline;">afegint nous nodes</span> segons siga necessari per a manejar un major volum de dades o una major càrrega de treball.<br /><br /></li>
+<li><strong>Rendiment millorat</strong>: la distribució de dades pot millorar el rendiment en permetre que les <span style="text-decoration: underline;">consultes es realitzen en paral·lel en múltiples nodes</span>.<br /><br /></li>
+<li><strong>Balanç de càrrega</strong>: els sistemes de bases de dades distribuïdes sovint tenen <span style="text-decoration: underline;">mecanismes per a equilibrar la càrrega de treball entre els nodes</span>, assegurant que cap node se sobrecarregue.</li>
+</ul>
+<p style="padding-left: 30px;">Inconvenients:</p>
+<ul>
+<li><strong>Complexitat d'administració</strong>: la configuració, administració i manteniment d'una base de dades distribuïda pot ser més complexa que una base de dades centralitzada.</li>
+<li><strong>Consistència de dades</strong>: mantindre la <span style="text-decoration: underline;">consistència de les dades distribuïdes</span> a través de múltiples nodes <span style="text-decoration: underline;">pot ser complicat</span>, i es requereixen mecanismes de sincronització i control de versions.</li>
+<li><strong>Latència de xarxa</strong>: la latència de xarxa pot ser un problema si els nodes distribuïts estan geogràficament separats, la qual cosa pot afectar el rendiment de les consultes.</li>
+<li><strong>Seguretat</strong>: la seguretat d'una base de dades distribuïda ha de ser acuradament gestionada, ja que la distribució de dades pot augmentar la superfície d'atac.</li>
+</ul>
+<h5 style="padding-left: 30px;">Fragmentació d'una BBDD distribuïda</h5>
+<p style="padding-left: 60px;">És una tècnica per a <strong>particionar</strong> una base de dades en <span style="text-decoration: underline;">unitats més xicotetes</span> i manejables anomenades <strong>fragments</strong>, amb cada fragment allotjat en un servidor separat. Ve a ser com organitzar un bufet lliure de deu plats per a tots els clients d'un hotel de 2000 hostes. En lloc d'una única taula de bufet amb tots els plats, posem cada plat en la seua pròpia taula, separant unes taules d'unes altres. D'aquesta manera, més comensals poden servir-se a si mateixos simultàniament, més ràpidament i amb menys colls de botella.</p>
+<p style="padding-left: 60px;">Avantatges:</p>
+<ul style="padding-left: 70px;">
+<li><strong>Rendiment millorat</strong>. Accés paral·lel i un rendiment de consulta més ràpid.</li>
+<li><strong>Escalabilitat millorada</strong>. permet augmentar els recursos en cadascun dels servidors, o dedicar major quantitat de servidors.</li>
+<li><strong>Major tolerància a fallades</strong> . En una base de dades fragmentada, si un fragment experimenta un problema, els altres continuen estant operatius.</li>
+<li><strong>Recuperació eficient de les dades</strong>. Les estacions individuals o les bases de dades fragmentades permeten un accés més ràpid i dirigit a la informació específica. A l'haver diversos servidors atesos els usuaris, el temps de resposta serà menor que si només hi ha un servidor atenent usuaris.</li>
+</ul>
+<p style="padding-left: 60px;">Inconvenients:</p>
+<ul style="padding-left: 70px;">
+<li>La <span style="text-decoration: underline;">implementació</span> d'una BBDD distribuïda és <span style="text-decoration: underline;">complexa</span>.</li>
+<li>La <span style="text-decoration: underline;">fragmentació ha de ser equilibrada</span>, de manera que el treball quede distribuït entre els servidors de manera equitativa, evitant sobrecarregar un servidor i que els altres estiguen ociosos.</li>
+<li>La <span style="text-decoration: underline;">cerca d'informació</span> que es troba <span style="text-decoration: underline;"><em>distribuïda</em></span> en diversos <span style="text-decoration: underline;">servidors</span> pot resultar una mica <span style="text-decoration: underline;">més lenta</span>.</li>
+</ul>
+<p style="padding-left: 30px;"><strong>Tècniques de fragmentació</strong></p>
+<ul style="padding-left: 50px;">
+<li>
+<p><strong>Fragmentació basada en el rang</strong>: consisteix a <span style="text-decoration: underline;">dividir les dades en funció dels rangs de valors especificats</span>. Exemple: una plataforma de comerç electrònic fragmenta la seua base de dades de clients basant-se en els imports de compra. Un fragment maneja als clients amb quantitats de compra baixes, un altre amb quantitats moderades, etc. Això facilita la recuperació eficient d'uns certs tipus de consultes.</p>
+<p></p>
+</li>
+<li>
+<p><strong>Fragmentació basada en hash</strong>: implica <span style="text-decoration: underline;">aplicar una funció hash a una clau</span> triada (<em>per exemple, ID de client</em>). <span style="text-decoration: underline;">El resultat determina el fragment en el qual s'emmagatzemen les dades</span>. Exemple: en una plataforma de xarxes socials, les dades dels usuaris poden fragmentar-se mitjançant hash basant-se en els ANEU d'usuari. La funció hash assignaria constantment a cada usuari a un fragment específic. Aquest enfocament garanteix una distribució homogènia dels usuaris entre fragments, la qual cosa promou un accés i un emmagatzematge de dades equilibrades.</p>
+<p></p>
+</li>
+<li>
+<p><strong>Fragmentació basada en llistes</strong>: implica especificar explícitament quina <span style="text-decoration: underline;">fragmentació emmagatzemarà unes certes dades basant-se en una llista predefinida de valors.</span> Exemple: una aplicació de missatgeria podria fraccionar una base de dades d'historial de xat basada en el codi del país. Cada fragment és responsable de les converses que s'originen o que impliquen usuaris en països específics.</p>
+</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="2_fitxers.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="4_sistemes_gestors_de_bases_de_dades.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
