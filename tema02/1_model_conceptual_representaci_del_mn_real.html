@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1. Model Conceptual: representació del món real | Model Conceptual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Francisco Jav. Jaraba Jurado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">Model Conceptual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Disseny Conceptual de BBDD</a></li>
+   <li><a href="1_modelo_conceptual_representacin_del_mundo_real.html" class="daddy">1. Modelo Conceptual: representación del mundo real</a>
+   <ul class="other-section">
+      <li><a href="11_nivel_conceptual_modelo_entidadrelacin.html" class="daddy">1.1. Nivel Conceptual. Modelo Entidad-Relación</a>
+      <ul class="other-section">
+         <li><a href="111_terminologa.html" class="no-ch">1.1.1. Terminología</a></li>
+      </ul>
+      </li>
+      <li><a href="12_modelo_er_extendido.html" class="daddy">1.2. Modelo E-R Extendido</a>
+      <ul class="other-section">
+         <li><a href="121_tipos_de_relaciones.html" class="no-ch">1.2.1. Tipos de relaciones</a></li>
+         <li><a href="122_generalizacinespecializacin_y_herencia.html" class="no-ch">1.2.2. Generalización/Especialización y Herencia</a></li>
+         <li><a href="123__relaciones_ternarias.html" class="no-ch">1.2.3 - Relaciones Ternarias</a></li>
+         <li><a href="124_agregacin_entidades_asociativas.html" class="no-ch">1.2.4. Agregación. Entidades Asociativas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li id="active"><a href="1_model_conceptual_representaci_del_mn_real.html" class="active daddy">1. Model Conceptual: representació del món real</a>
+   <ul>
+      <li><a href="11_nivell_conceptual_model_entitatrelaci.html" class="daddy">1.1. Nivell Conceptual. Model Entitat-Relació</a>
+      <ul class="other-section">
+         <li><a href="111_terminologia.html" class="no-ch">1.1.1. Terminologia</a></li>
+      </ul>
+      </li>
+      <li><a href="12_model_er_ests.html" class="daddy">1.2. Model E-R Estés</a>
+      <ul class="other-section">
+         <li><a href="121_tipus_de_relacions.html" class="no-ch">1.2.1. Tipus de relacions</a></li>
+         <li><a href="122_generalitzaciespecialitzaci_i_herncia.html" class="no-ch">1.2.2. Generalització/Especialització i Herència</a></li>
+         <li><a href="123_relacions_ternaries.html" class="no-ch">1.2.3. Relacions Ternaries</a></li>
+         <li><a href="124_agregaci_entitats_associatives.html" class="no-ch">1.2.4. Agregació. Entitats associatives</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="124_agregacin_entidades_asociativas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="11_nivell_conceptual_model_entitatrelaci.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1. Model Conceptual: representació del món real</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id15">
+<div class="iDevice emphasis0" >
+<div id="ta15_120_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: left;">La <strong>interpretació</strong> dels fenòmens que ocorren en la naturalesa és una activitat natural de l'ésser humà. Per a això l'ésser humà s'ha basat en la <strong>seua capacitat d'abstracció</strong>.</p>
+<p style="background-color: cyan; border: 1px solid black; padding: 15px 30px;"><strong>Abstracció</strong>: capacitat mitjançant la qual som capaces de simplificar el procés d'interpretació, simplificant o reduint el nombre de paràmetres i relacions existents en el fenomen natural que es desitja interpretar.</p>
+<p>Al conjunt de les propietats que caracteritzen un fenomen se'l denomina <span style="color: #008000;"><strong>dades</strong></span>, i al conjunt de valors que aquestes propietats poden presentar se'ls denomina <span style="color: #008000;"><strong>informació</strong></span>.</p>
+<p>Així tenim que un <strong>model</strong> és la <strong>representació abstracta d'un determinat fenomen natural</strong>.</p>
+<p>La <strong>mesura de valors</strong> corresponents a les dades es realitzarà mitjançant un conjunt de <span style="text-decoration: underline;">tipus de dades</span> (<em>enter, real, booleà, cadena de caràcters, etc</em>) els quals poden prendre un <span style="text-decoration: underline;">conjunt de valors predefinit</span> per endavant (<span style="color: #008000;"><em>domini</em></span>).</p>
+<p>Exemples:</p>
+<table style="width: 100%; height: 100px;" border="1">
+<tbody>
+<tr style="height: 25px;">
+<td style="width: 18.2997%; height: 25px; background-color: #bbeff2; text-align: center;"><strong>Dada</strong></td>
+<td style="width: 81.7003%; height: 25px; background-color: #bbeff2; text-align: center;"><strong>Domini</strong></td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 18.2997%; height: 25px;">Nomb</td>
+<td style="width: 81.7003%; height: 25px;">Conjunt de caràcters de l'alfabet amb una longitud màxima de 100 caràcters. Pot incloure espais.</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 18.2997%; height: 25px;">Edat</td>
+<td style="width: 81.7003%; height: 25px;">Nombres enters compresos entre 0 i 200.</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 18.2997%; height: 25px;">Data de naixement</td>
+<td style="width: 81.7003%; height: 25px;">Conjunt de dates vàlides per al calendari occidental.</td>
+</tr>
+<tr>
+<td style="width: 18.2997%;">Pes</td>
+<td style="width: 81.7003%;">Nombres reals positius amb 3 decimals.</td>
+</tr>
+<tr>
+<td style="width: 18.2997%;">Salari</td>
+<td style="width: 81.7003%;">Nombres reals positius amb 2 decimals.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="mod_rel_02.svg" style="float: right; margin: 10px 20px 10px 20px;" width="400" height="383" />D'aquesta manera, una dada vindrà definit pel nom de la pròpia dada i la seua informació en un moment determinat en el món real. Així, la dada "<em><strong>pes</strong></em>" d'una persona, vindrà determinat pel <span style="text-decoration: underline;">nom de la dada</span> i la <span style="text-decoration: underline;">informació del seu valor</span> en kg en un moment concret: "<span style="color: #008000;">pes: 67</span>". La informació ha de ser emmagatzemada de manera que permeta la seua comunicació.</p>
+<p>Un <strong>Model de Dades</strong> és una unitat d'abstracció mitjançant la qual pot <strong>descriure's un fenomen</strong> real o abstracte. En ell es descriuen les <strong>propietats</strong> que caracteritzen al fenomen, les <strong>relacions</strong> entre aquestes propietats i com les propietats i les relacions poden <strong>evolucionar</strong> amb el temps.</p>
+<p>El <strong>primer pas</strong> en la representació d'un fenomen del món real és la <span style="text-decoration: underline;">determinació dels límits del fenomen</span>, és a dir, quines dades són els que intervenen i com poden ser mesurats.</p>
+<p>De manera general, la representació d'un problema requereix el seguiment dels següents passos:</p>
+<ol>
+<li>
+<p><strong>Definició del problema</strong>: mitjançant una <span style="text-decoration: underline;">descripció simple i concreta</span> on es detalla la funció o objectiu que el sistema desitja aconseguir. Interessa descriure com el sistema es comporta a grans trets, fent èmfasi en les relacions amb l'exterior.</p>
+</li>
+<li>
+<p><strong>Definició de l'arquitectura del problema</strong>: mitjançant una <span style="text-decoration: underline;">descripció de les "parts" importants del sistema i com interactuen entre elles</span>.</p>
+</li>
+<li>
+<p><strong>Definició de l'estructura del problema</strong>: mitjançant la <span style="text-decoration: underline;">descripció dels elements del sistema</span>. Es determinen quins <span style="text-decoration: underline;">objectes, entitats, dades</span> o variables són les que formen part del problema en estudi. Per a cadascun d'aquests objectes es determina:</p>
+<ul>
+<li>
+<p>La <span style="text-decoration: underline;">definició de l'objecte</span>: descripció de la funció que exerceix l'objecte dins del problema en estudi.</p>
+</li>
+<li>
+<p>La <span style="text-decoration: underline;">mesura de l'objecte</span>: descripció dels valors que poden ser mesurats o pot prendre l'objecte.</p>
+</li>
+<li>
+<p>Les <span style="text-decoration: underline;">relacions entre objectes</span>: descripció de les interdependències o qualsevol altre tipus de relacions entre objectes.</p>
+</li>
+<li>
+<p>La <span style="text-decoration: underline;">definició de les restriccions inherents als objectes</span>: descripció de quins valors poden ser mesurats per a cadascun dels objectes sobre la base de les relacions que mantenen amb la resta d'objectes del sistema. Així, un sofà pot ser de molts colors, però si és de la col·lecció primavera_2024 només podrà ser "verda" o "taronja".</p>
+</li>
+<li>
+<p><span style="text-decoration: underline;">Definició de la dinàmica</span>: descripció de l'evolució que el problema tindrà o té amb el temps.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Estudi del comportament del model proposat</strong>: on s'analitzarà l'adequació del sistema proposat als objectius desitjats.</p>
+</li>
+</ol>
+<p><img src="mod_rel_03.png" style="float: right; margin-right: 20px; margin-left: 20px;" width="150" height="393" /></p>
+<p>Els <span style="text-decoration: underline;">Models de Dades</span> permeten la <span style="text-decoration: underline;">representació del problema a tres nivells d'abstracció</span>:</p>
+<ul>
+<li><strong>Nivell conceptual</strong>: es representen els <span style="text-decoration: underline;">tipus o classes d'objectes i les seues relacions</span> . Es descriu cadascun dels tipus d'objectes especificant les seues propietats i domini en el qual poden ser mesures, així com les restriccions en els valors que poden presentar-se. El nivell conceptual <span style="text-decoration: underline;">és independent de les eines</span> i mecanismes que es vagen a utilitzar <span style="text-decoration: underline;">per a la representació i tractament</span>. Sol utilitzar-se alguna variant del <strong>model entitat-relació</strong> per a les bases de dades relacionals.<br /><br /></li>
+<li><strong>Nivell lògic</strong>: es parteix del resultat del disseny conceptual, que es transforma de manera que s'adapte a la tecnologia que s'ha d'emprar. <span style="text-decoration: underline;">Es representa el problema sota les limitacions imposades per la representació i el tractament de la informació que es vaja a realitzar</span>. Així, el tractament manual o automàtic imposa unes restriccions; el suport on s'emmagatzema la informació imposa altres restriccions, el maquinari utilitzat imposa altres restriccions, etc. En el <span style="text-decoration: underline;">model relacional s'usen les taules</span>.<br /><br /></li>
+<li><strong>Nivell físic</strong>: en aquesta etapa es transforma l'estructura obtinguda en l'etapa del disseny lògic, amb l'objectiu d'aconseguir una major eficiència; a més, es completa amb aspectes <span style="text-decoration: underline;">d'implementació física que dependran del SGBD</span>. El sistema es representa en la forma en què és vist pel sistema de representació i tractament utilitzat. S'utilitzen SGBD concrets.</li>
+</ul>
+<p><img src="mod_rel_01.png" alt="" width="603" height="150" /></p>
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 22.2477%; text-align: center; background-color: #fae7aa;"><strong>Nivell de descripció</strong></td>
+<td style="width: 37.0094%; text-align: center; background-color: #fae7aa;"><strong>Estructura</strong></td>
+<td style="width: 40.7428%; text-align: center; background-color: #fae7aa;"><strong>Comportament</strong></td>
+</tr>
+<tr>
+<td style="width: 22.2477%;"><strong>Model Conceptual</strong></td>
+<td style="width: 37.0094%;"><span style="text-decoration: underline;">Descripció</span> dels objectes del <span style="text-decoration: underline;">món real</span>, dels seus <span style="text-decoration: underline;">atributs</span> o propietats i de les <span style="text-decoration: underline;">relacions</span> entre objectes.</td>
+<td style="width: 40.7428%;">Descripció del comportament dels objectes. Les accions, operacions i processos que aquests objectes realitzen sobre altres objectes, així com les que són realitzades sobre els objectes del sistema.</td>
+</tr>
+<tr>
+<td style="width: 22.2477%;">
+<p><strong>Model Lògic</strong><br /><strong>Model organitzatiu</strong></p>
+</td>
+<td style="width: 37.0094%;">Descripció dels <span style="text-decoration: underline;">objectes lògics</span>, identificant els <span style="text-decoration: underline;">atributs</span> pels quals aquests poden ser <span style="text-decoration: underline;">identificats</span>, així com les <span style="text-decoration: underline;">relacions</span> existents entre els objectes</td>
+<td style="width: 40.7428%;">Descripció de les tasques que s'han de realitzar per a representar el comportament dels objectes. Aquestes tasques s'agruparan en fases i  procediments.</td>
+</tr>
+<tr>
+<td style="width: 22.2477%;"><strong>Model Físic</strong><br /><strong>Model procedimental</strong></td>
+<td style="width: 37.0094%;">Descripció dels <span style="text-decoration: underline;">objectes físics</span>. Les estructures i relacions dels objectes és representada de manera adequada per al seu posterior emmagatzematge, recuperació i tractament.</td>
+<td style="width: 40.7428%;">Descripció de les accions elementals que s'han de realitzar per a representar el comportament dels objectes. Aquestes accions són representades sota les limitacions del llenguatge que es vaja a utilitzar per a la seua implementació en programes d'ordinador.</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="124_agregacin_entidades_asociativas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="11_nivell_conceptual_model_entitatrelaci.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

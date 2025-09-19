@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.2.3. Relacions Ternaries | Model Conceptual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Francisco Jav. Jaraba Jurado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">Model Conceptual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Disseny Conceptual de BBDD</a></li>
+   <li><a href="1_modelo_conceptual_representacin_del_mundo_real.html" class="daddy">1. Modelo Conceptual: representación del mundo real</a>
+   <ul class="other-section">
+      <li><a href="11_nivel_conceptual_modelo_entidadrelacin.html" class="daddy">1.1. Nivel Conceptual. Modelo Entidad-Relación</a>
+      <ul class="other-section">
+         <li><a href="111_terminologa.html" class="no-ch">1.1.1. Terminología</a></li>
+      </ul>
+      </li>
+      <li><a href="12_modelo_er_extendido.html" class="daddy">1.2. Modelo E-R Extendido</a>
+      <ul class="other-section">
+         <li><a href="121_tipos_de_relaciones.html" class="no-ch">1.2.1. Tipos de relaciones</a></li>
+         <li><a href="122_generalizacinespecializacin_y_herencia.html" class="no-ch">1.2.2. Generalización/Especialización y Herencia</a></li>
+         <li><a href="123__relaciones_ternarias.html" class="no-ch">1.2.3 - Relaciones Ternarias</a></li>
+         <li><a href="124_agregacin_entidades_asociativas.html" class="no-ch">1.2.4. Agregación. Entidades Asociativas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="1_model_conceptual_representaci_del_mn_real.html" class="current-page-parent daddy">1. Model Conceptual: representació del món real</a>
+   <ul>
+      <li><a href="11_nivell_conceptual_model_entitatrelaci.html" class="daddy">1.1. Nivell Conceptual. Model Entitat-Relació</a>
+      <ul class="other-section">
+         <li><a href="111_terminologia.html" class="no-ch">1.1.1. Terminologia</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="12_model_er_ests.html" class="current-page-parent daddy">1.2. Model E-R Estés</a>
+      <ul>
+         <li><a href="121_tipus_de_relacions.html" class="no-ch">1.2.1. Tipus de relacions</a></li>
+         <li><a href="122_generalitzaciespecialitzaci_i_herncia.html" class="no-ch">1.2.2. Generalització/Especialització i Herència</a></li>
+         <li id="active"><a href="123_relacions_ternaries.html" class="active no-ch">1.2.3. Relacions Ternaries</a></li>
+         <li><a href="124_agregaci_entitats_associatives.html" class="no-ch">1.2.4. Agregació. Entitats associatives</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="122_generalitzaciespecialitzaci_i_herncia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="124_agregaci_entitats_associatives.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.2.3. Relacions Ternaries</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id24">
+<div class="iDevice emphasis0" >
+<div id="ta24_120_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><img src="rel_tern01.png" alt="" width="800" height="529" /></p>
+<p>Una <strong>relació ternària</strong> és una <span style="text-decoration: underline;">associació de tres entitats</span>. Sovint, la relació ternària <span style="text-decoration: underline;">la utilitzarem quan entre tres entitats existeixen relacions binàries N:N</span> (<em>molts a molts</em>) <span style="text-decoration: underline;">entre elles</span>. Si entre elles existeix alguna relació 1:N (<em>un a molts</em>) o 1:1 (<span style="text-decoration: underline;">un a un</span>), llavors la relació ternària no té molt sentit.</p>
+<p>La <strong>manera de trobar cardinalitats</strong> en les relacions ternàries és <span style="text-decoration: underline;">fixar una combinació d'elements en dos dels extrems de la relació i obtindre</span> lògicament les <span style="text-decoration: underline;">cardinalitats mínima i màxima en l'altre extrem</span> lliure. Explicat d'una altra manera, en una relació ternària es relacionen dues de les entitats (<em>en termes d'unitat</em>) respecte a l'altra entitat.</p>
+<p><img src="rel_tern02.1.png" style="float: right; margin-right: 20px; margin-left: 20px;" width="500" height="228" />Exemple: les entitats <strong>lliure</strong>, <strong>autor</strong> i <strong>editorial</strong> es relacionen les tres mitjançant l'acció de publicar el llibre (<em>en un any concret, amb un ISBN i amb un determinat nombre de pàgines en l'edició</em>).</p>
+<p>Per a <span style="text-decoration: underline;">determinar les cardinalitats cal preguntar-se per</span>:</p>
+<ol>
+<li>Quants autors pot tindre un determinat llibre publicat en una determinada editorial(<em>cardinalitat en l'extrem de l'entitat autor</em>), expressat d'una altra forma: Donat <strong>un</strong> <span style="text-decoration: underline;">llibre</span> d'<strong>una</strong> <span style="text-decoration: underline;">editorial</span>, <strong>Quants</strong> <span style="text-decoration: underline;">autors</span> ho han publicat?<br /><br /></li>
+<li>Quants llibres pot tindre un determinat autor publicats en una determinada editorial (<em>cardinalitat en l'extrem de l'entitat lliure</em>), expressat d'una altra forma totalment equivalent a l'anterior: <strong>Un</strong> <span style="text-decoration: underline;">autor</span> que col·labora amb <strong>una</strong> <span style="text-decoration: underline;">editorial</span>, <strong>Quants</strong> <span style="text-decoration: underline;">llibres</span> té publicats?<br /><br /></li>
+<li>En quantes editorials pot un determinat autor publicar un mateix llibre (<em>cardinalitat en l'extrem de l'entitat editorial</em>). Expressat d'una forma diferent però equivalent podríem dir: <strong>Un</strong> <span style="text-decoration: underline;">autor</span> que ha escrit <strong>un</strong> <span style="text-decoration: underline;">llibre</span>, En <strong>quantes</strong> <span style="text-decoration: underline;">editorials</span> el té publicat?</li>
+</ol>
+<p>Aquestes relacions es donen quan ens interessa conéixer la concurrència de les tres en un mateix moment. <span style="text-decoration: underline;">Interessa conéixer la cardinalitat màxima en cadascuna de les tres branques de la relació</span>. Poden ser: (1, 1, 1), (1, 1, N), (1, N, N) o (N, N, N). No importa la posició on es troba la cardinalitat N, és a dir, és el mateix (N, 1, 1) que (1, N, 1) o que (1, 1, N).</p>
+<p></p>
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<ul>
+<li><strong>1</strong> <span style="text-decoration: underline;">Producte</span> subministrat per <strong>1</strong> <span style="text-decoration: underline;">Subministrador</span>, pot ser subministrat a <strong>N</strong> <span style="text-decoration: underline;">clients</span><br /><br /></li>
+<li><strong>1</strong> <span style="text-decoration: underline;">Producte</span> subministrado a <strong>1</strong> <span style="text-decoration: underline;">Client</span>, pot ser subministrat per <strong>M</strong> <span style="text-decoration: underline;">Subministradors<br /><br /></span></li>
+<li><strong>1</strong> <span style="text-decoration: underline;">Subministrador</span> que subministra a <strong>1</strong> <span style="text-decoration: underline;">Client</span>,  pot subministra<strong>r P</strong> <span style="text-decoration: underline;">Productes</span></li>
+</ul>
+</td>
+<td style="width: 50%; text-align: center;"><img src="rel_tern03.1.png" width="503" height="263" /></td>
+</tr>
+</tbody>
+</table>
+<p>Ejemplos de cardinalidades:</p>
+<p><img src="rel_tern04.png" width="1200" height="600" /></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="122_generalitzaciespecialitzaci_i_herncia.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="124_agregaci_entitats_associatives.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

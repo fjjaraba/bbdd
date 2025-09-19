@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1. Modelo Conceptual: representación del mundo real | Model Conceptual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Francisco Jav. Jaraba Jurado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-2"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">Model Conceptual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Disseny Conceptual de BBDD</a></li>
+   <li id="active"><a href="1_modelo_conceptual_representacin_del_mundo_real.html" class="active daddy">1. Modelo Conceptual: representación del mundo real</a>
+   <ul>
+      <li><a href="11_nivel_conceptual_modelo_entidadrelacin.html" class="daddy">1.1. Nivel Conceptual. Modelo Entidad-Relación</a>
+      <ul class="other-section">
+         <li><a href="111_terminologa.html" class="no-ch">1.1.1. Terminología</a></li>
+      </ul>
+      </li>
+      <li><a href="12_modelo_er_extendido.html" class="daddy">1.2. Modelo E-R Extendido</a>
+      <ul class="other-section">
+         <li><a href="121_tipos_de_relaciones.html" class="no-ch">1.2.1. Tipos de relaciones</a></li>
+         <li><a href="122_generalizacinespecializacin_y_herencia.html" class="no-ch">1.2.2. Generalización/Especialización y Herencia</a></li>
+         <li><a href="123__relaciones_ternarias.html" class="no-ch">1.2.3 - Relaciones Ternarias</a></li>
+         <li><a href="124_agregacin_entidades_asociativas.html" class="no-ch">1.2.4. Agregación. Entidades Asociativas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="1_model_conceptual_representaci_del_mn_real.html" class="daddy">1. Model Conceptual: representació del món real</a>
+   <ul class="other-section">
+      <li><a href="11_nivell_conceptual_model_entitatrelaci.html" class="daddy">1.1. Nivell Conceptual. Model Entitat-Relació</a>
+      <ul class="other-section">
+         <li><a href="111_terminologia.html" class="no-ch">1.1.1. Terminologia</a></li>
+      </ul>
+      </li>
+      <li><a href="12_model_er_ests.html" class="daddy">1.2. Model E-R Estés</a>
+      <ul class="other-section">
+         <li><a href="121_tipus_de_relacions.html" class="no-ch">1.2.1. Tipus de relacions</a></li>
+         <li><a href="122_generalitzaciespecialitzaci_i_herncia.html" class="no-ch">1.2.2. Generalització/Especialització i Herència</a></li>
+         <li><a href="123_relacions_ternaries.html" class="no-ch">1.2.3. Relacions Ternaries</a></li>
+         <li><a href="124_agregaci_entitats_associatives.html" class="no-ch">1.2.4. Agregació. Entitats associatives</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="11_nivel_conceptual_modelo_entidadrelacin.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1. Modelo Conceptual: representación del mundo real</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id5">
+<div class="iDevice emphasis0" >
+<div id="ta5_122_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: left;">La <strong>interpretación</strong> de los fenómenos que ocurren en la naturaleza es una actividad natural del ser humano. Para ello el ser humano se ha basado en su <strong>capacidad de abstracción</strong>.</p>
+<p style="background-color: cyan; border: 1px solid black; padding: 15px 30px;"><strong>Abstracción</strong>: capacidad mediante la cual somos capaces de simplificar el proceso de interpretación, simplificando o reduciendo el número de parámetros y relaciones existentes en el fenómeno natural que se desea interpretar.</p>
+<p>Al conjunto de las propiedades que caracterizan un fenómeno se le denomina <span style="color: #0000ff;"><strong>datos</strong></span>, y al conjunto de valores que estas propiedades pueden presentar se les denomina <strong><span style="color: #0000ff;">información</span></strong>.</p>
+<p>Así tenemos que un <strong>modelo</strong> es la <strong>representación abstracta de un determinado fenómeno natural</strong>.</p>
+<p>La <strong>medición de valores</strong> correspondientes a los datos se realizará mediante un conjunto de <strong>tipos de datos</strong> (<em>entero, real, booleano, cadena de caracteres, etc</em>) los cuales pueden tomar un <strong>conjunto de valores predefinido</strong> de antemano (<em><span style="color: #0000ff;"><strong>dominio</strong></span></em>).</p>
+<p>Ejemplos:</p>
+<table style="width: 100%; height: 100px;" border="1">
+<tbody>
+<tr style="height: 25px;">
+<td style="width: 18.2997%; height: 25px; background-color: #bbeff2; text-align: center;"><strong>Dato</strong></td>
+<td style="width: 81.7003%; height: 25px; background-color: #bbeff2; text-align: center;"><strong>Dominio</strong></td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 18.2997%; height: 25px;">Nombre</td>
+<td style="width: 81.7003%; height: 25px;">Conjunto de caracteres del alfabeto con una longitud máxima de 100 caracteres. Puede incluir espacios.</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 18.2997%; height: 25px;">Edad</td>
+<td style="width: 81.7003%; height: 25px;">Números enteros comprendidos entre 0 y 200.</td>
+</tr>
+<tr style="height: 25px;">
+<td style="width: 18.2997%; height: 25px;">Fecha de nacimiento</td>
+<td style="width: 81.7003%; height: 25px;">Conjunto de fechas válidas para el calendario occidental.</td>
+</tr>
+<tr>
+<td style="width: 18.2997%;">Peso</td>
+<td style="width: 81.7003%;">Números reales positivos con 3 decimales.</td>
+</tr>
+<tr>
+<td style="width: 18.2997%;">Salario</td>
+<td style="width: 81.7003%;">Números reales positivos con 2 decimales.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="mod_rel_02.svg" style="float: right; margin: 10px 20px 10px 20px;" width="400" height="383" />De esta forma, un dato vendrá definido por el nombre del propio dato y su información en un momento determinado en el mundo real. Así, el dato "<strong>peso</strong>" de una persona, vendrá determinado por el <strong>nombre del dato</strong> y la <strong>información de su valor</strong> en kg en un momento concreto:  "<span style="color: #008000;">peso: 67</span>". La información debe ser almacenada de forma que permita su comunicación.</p>
+<p>Un <strong>Modelo de Datos</strong> es una unidad de abstracción mediante la cual puede <strong>describirse un fenómeno</strong> real o abstracto. En él se describen las <strong>propiedades</strong> que caracterizan al fenómeno, las <strong>relaciones</strong> entre estas propiedades y cómo las propiedades y las relaciones pueden <strong>evolucionar</strong> con el tiempo.</p>
+<p>El <strong>primer paso</strong> en la representación de un fenómeno del mundo real es la <strong>determinación de los límites del fenómeno</strong>, es decir, qué datos son los que intervienen y cómo pueden ser medidos.</p>
+<p>De forma general, la representación de un problema requiere el seguimiento de los siguientes pasos:</p>
+<ol>
+<li><strong>Definición del problema</strong>: mediante una descripción simple y concreta donde se detalla la función u objetivo que el sistema desea alcanzar. Interesa describir cómo el sistema se comporta a grandes rasgos, haciendo énfasis en las relaciones con el exterior.<br /><br /></li>
+<li><strong>Definición de la arquitectura del problema</strong>: mediante una descripción de las "partes" importantes del sistema y cómo interactúan entre ellas.<br /><br /></li>
+<li><strong>Definición de la estructura del problema</strong>: mediante la descripción de los elementos del sistema. Se determinan qué objetos, entidades, datos o variables son las que forman parte del problema en estudio. Para cada uno de estos objetos se determina:<br />
+<ul>
+<li>La definición del objeto: descripción de la función que desempeña el objeto dentro del problema en estudio.</li>
+<li>La medida del objeto: descripción de los valores que pueden ser medidos o puede tomar el objeto.</li>
+<li>Las relaciones entre objetos: descripción de las interdependencias o cualquier otro tipo de relaciones entre objetos.</li>
+<li>La definición de las restricciones inherentes a los objetos: descripción de qué valores pueden ser medidos para cada uno de los objetos en base a las relaciones que mantienen con el resto de objetos del sistema. Así, un sofá puede ser de muchos colores, pero si es de la colección primavera_2024 solo podrá ser "verde" o "naranja".<br /><br /></li>
+</ul>
+</li>
+<li><strong>Definición de la dinámica</strong>: descripción de la evolución que el problema va a tener o tiene con el tiempo.<br /><br /></li>
+<li><strong>Estudio del comportamiento del modelo propuesto</strong>: donde se analizará la adecuación del sistema propuesto a los objetivos deseados.</li>
+</ol>
+<p><img src="mod_rel_03.png" style="float: right; margin-right: 20px; margin-left: 20px;" width="150" height="393" />Los Modelos de Datos permiten la representación del problema a tres niveles de abstracción:</p>
+<ul>
+<li><strong>Nivel conceptual</strong>: se representan los <strong>tipos o clases de objetos y sus relaciones</strong> . Se describe cada uno de los tipos de objetos especificando sus propiedades y dominio en el cual pueden ser medidas, así como las restricciones en los valores que pueden presentarse. El nivel conceptual es independiente de las herramientas y mecanismos que se vayan a utilizar para la representación y tratamiento. Suele utilizarse alguna variante del <strong>modelo entidad-relación</strong> para las bases de datos relacionales. <br /><br /></li>
+<li><strong>Nivel lógico</strong>: se parte del resultado del diseño conceptual, que se transforma de forma que se adapte a la tecnología que se debe emplear. Se representa el problema bajo las limitaciones impuestas por la representación y el tratamiento de la información que se vaya a realizar. Así, el tratamiento manual o automático impone unas restricciones; el soporte donde se almacena la información impone otras restricciones, el hardware utilizado impone otras restricciones, etc. En el modelo relacional se usan las tablas.<br /><br /></li>
+<li><strong>Nivel físico</strong>:  en esta etapa se transforma la estructura obtenida en la etapa del diseño lógico, con el objetivo de conseguir una mayor eficiencia; además, se completa con aspectos de implementación física que dependerán del SGBD.  El sistema se representa en la forma en que es visto por el sistema de representación y tratamiento utilizado. Se utilizan SGBD concretos.</li>
+</ul>
+<p><img src="mod_rel_01.png" alt="" width="603" height="150" /></p>
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 22.2477%; text-align: center; background-color: #fae7aa;"><strong>Nivel de descripción</strong></td>
+<td style="width: 37.0094%; text-align: center; background-color: #fae7aa;"><strong>Estructura</strong></td>
+<td style="width: 40.7428%; text-align: center; background-color: #fae7aa;"><strong>Comportamiento</strong></td>
+</tr>
+<tr>
+<td style="width: 22.2477%;"><strong>Modelo Conceptual</strong></td>
+<td style="width: 37.0094%;">Descripción de los objetos del mundo real, de sus atributos o propiedades y de las relaciones entre objetos.</td>
+<td style="width: 40.7428%;">Descripción del comportamiento de los objetos. Las acciones, operaciones y procesos que estos objetos realizan sobre otros objetos, así como las que son realizadas sobre los objetos del sistema.</td>
+</tr>
+<tr>
+<td style="width: 22.2477%;">
+<p><strong>Modelo Lógico</strong><br /><strong>Modelo organizativo</strong></p>
+</td>
+<td style="width: 37.0094%;">Descripción de los objetos lógicos, identificando los atributos por los cuales estos pueden ser identificados, así como las relaciones existentes entre los objetos.</td>
+<td style="width: 40.7428%;">Descripción de las tareas que se deben realizar para representar el comportamiento de los objetos. Estas tareas se agruparán en fases y procedimientos.</td>
+</tr>
+<tr>
+<td style="width: 22.2477%;"><strong>Modelo Físico</strong><br /><strong>Modelo procedimental</strong></td>
+<td style="width: 37.0094%;">Descripción de los objetos físicos. Las estructuras y relaciones de los objetos es representada de forma adecuada para su posterior almacenamiento, recuperación y tratamiento.</td>
+<td style="width: 40.7428%;">Descripción de las acciones elementales que se deben realizar para representar el comportamiento de los objetos. Estas acciones son representadas bajo las limitaciones del lenguaje que se vaya a utilizar para su implementación en programas de ordenador.</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Modelo Relacional (Esto no)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Es el modelo <strong>más utilizado en la actualidad</strong> para modelar problemas reales y administrar datos dinámicamente. <strong>Desarrolla un esquema</strong> de base de datos a partir del cual se podrá <strong>realizar el modelo físico</strong> o de implementación en el DBMS.</p>
+<p>El modelo relacional <strong>tiene en cuenta los tres aspectos</strong> siguientes de los datos:</p>
+<ol>
+<li>La <strong>estructura</strong>, que debe permitir representar la información que nos interesa del mundo real.</li>
+<li>La <strong>manipulación</strong>, a la que da apoyo mediante las operaciones de actualización y consulta de los datos.</li>
+<li>La <strong>integridad</strong>, que es facilitada mediante el establecimiento de reglas de integridad; es decir, condiciones que los datos deben cumplir.</li>
+</ol>
+<p>Los <strong>objetivos</strong> que este modelo persigue son:</p>
+<ul>
+<li><strong>Independencia Física</strong>: la <strong>forma de almacenar los datos</strong> <strong>no debe influir en su manipulación</strong>. Si el almacenamiento físico cambia, los usuarios que acceden a esos datos no tienen que modificar sus aplicaciones.</li>
+<li><strong>Independencia Lógica</strong>: las <strong>aplicaciones</strong> que utilizan la base de datos <strong>no deben ser modificadas por que se inserten, actualicen y eliminen datos</strong>.</li>
+<li><strong>Flexibilidad</strong>: en el sentido de poder <strong>presentar</strong> a cada usuario los <strong>datos</strong> <strong>de la forma</strong> en que éste <strong>prefiera.</strong></li>
+<li><strong>Uniformidad</strong>: las <strong>estructuras lógicas</strong> de los datos siempre tienen <strong>una única forma conceptual</strong> (<em>las tablas</em>), lo que facilita la creación y manipulación de la base de datos por parte de los usuarios.</li>
+<li><strong>Sencilles</strong>: las características anteriores hacen que este Modelo sea <strong>fácil de comprender y de utilizar</strong> por parte del usuario final.</li>
+</ul>
+<p>Hay que precisar que un SGBD relacional, <strong>en el nivel físico</strong>, puede emplear <strong>cualquier estructura de datos</strong> para implementar la estructura lógica formada por las relaciones. Sin embargo, esta implementación física queda oculta al usuario.</p>
+<p>El modelo relacional proporciona una <strong>estructura de los datos</strong> que consiste en un conjunto de <strong>relaciones que representan la información</strong> que nos interesa del mundo real.</p>
+<p>Las BBDD's relacionales <strong>se implementan</strong> con un <strong>lenguaje</strong> <strong>utilizado</strong> para la <strong>descripción</strong> de una base de datos. Con este lenguaje vamos a poder <strong>describir las estructuras de los datos</strong> (<em>tipos de datos y relaciones entre ellos</em>), las <strong>restricciones de integridad</strong> (<em>condiciones que deben cumplir los datos, según las necesidades de nuestro modelo basado en la realidad</em>) y las <strong>operaciones de manipulación</strong> de los datos (<em>insertado, borrado, modificación de datos</em>). Este lenguaje, por lo general, presenta dos sublenguajes:</p>
+<ul>
+<li><strong>Lenguaje de Definición de Datos</strong> o <strong><span style="color: #0000ff;">DDL</span></strong> (<em>Data Definition Language</em> ) , cuya función es <strong>describir</strong>, de una forma abstracta, las <strong>estructuras de datos y las restricciones</strong> de integridad.</li>
+<li><strong>Lenguaje de Manipulación de Datos</strong> o <strong><span style="color: #0000ff;">DML</span></strong> (<em>Data Manipulation Language</em>), que sirve para <strong>describir las operaciones de manipulación</strong> de los datos.</li>
+</ul>
+<p>Existen <strong>tres fases de modelado en el diseño de una base de datos</strong> basadas en el nivel de abstracción, es decir, en lo alejado que esté del mundo real y que deben ser realizadas en orden:</p>
+<ul>
+<li><strong>Modelo de datos conceptual</strong>: se utiliza en el <strong>diseño conceptual</strong>. Es una <strong>representación</strong> (<em>normalmente gráfica</em>) de la <strong>realidad</strong> no comprometida con ningún entorno informático. Describen las <strong>estructuras de datos y restricciones</strong> de integridad. Se utilizan durante la <strong>etapa de análisis de un problema</strong> dado, y están <strong>orientados a representar los elementos que intervienen y sus relaciones</strong>. Es una fase muy importante ya que <strong>cualquier error</strong> en esta fase <strong>es arrastrado a las siguientes</strong>. En esta fase suelen utilizarse los diagramas Entidad-Relación (<em>o modelo Entidad-Relación</em>) o Diagramas de Estructura de Datos (<em>DSD</em>)..<br /><br /></li>
+<li><strong>Modelo Lógico</strong>: se utiliza en el <strong>diseño lógico</strong>. Determinan unos <strong>criterios de almacenamiento</strong> (<em>formas de almacenar la información</em>) y de <strong>operaciones de manipulación de datos</strong> dentro de un tipo de entorno informático.  En esta fase es donde se utiliza el modelo Relacional.<br /><br /></li>
+<li><strong>Modelo Físico</strong>: se utiliza en el <strong>diseño físico</strong>. Es la <strong>implementación física</strong> del modelo anterior. Son estructuras de datos a bajo nivel, implementadas dentro de un sistema gestor de base de datos comercial.<img src="mod_rel_01.png" alt="" width="603" height="150" /></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id3">
+<div class="iDevice emphasis0" >
+<div id="ta3_120_2" class="block iDevice_content">
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tasca</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_123_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>La empresa "Automoción Gombau" dedicada a la venta de coches quiere informatizar la gestión de la oficina, llevando un control de la siguiente información:</p>
+<ul>
+<li><strong>Coches</strong>: modelos de coches que tiene para vender: marca, modelo, cilindrada, precio de compra, precio de compra con iva, precio de venta, precio de venta con iva, etc.</li>
+<li><strong>Clientes</strong>: información de los clientes que van al informarse para comprar un coche: nombre, apellidos, teléfono, tipo de coche que le interesa, etc.</li>
+<li><strong>Vendedores</strong>: información de los distintos vendedores que tiene: su información personal así como  de los clientes a los que atiende y de los coches que vende.</li>
+</ul>
+<p>A la señora Gombau, directora de la oficina, le interesa mucho poder consultar de forma fácil:</p>
+<ul>
+<li>Coches comprados en un período de tiempo.</li>
+<li>Coches vendidos en un período de tiempo.</li>
+<li>Clientes que aún siguen buscando un coche a día de hoy.</li>
+<li>Clientes que han comprado un coche en un período de tiempo.</li>
+<li></li>
+</ul>
+<p>Propón un sistema para almacenar la información necesaria y llevar la gestión del negocio de venta de coches, así como del trabajo de los vendedores. Debes detallar qué herramientas informáticas utilizarás, así como crear un ejemplo con datos introducidos donde se vea cómo quedará la información almacenada para su uso y gestión.</p>
+<p>Los documentos que generes debes comprimirlos y enviarlos al profesor/a para su corrección.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="11_nivel_conceptual_modelo_entidadrelacin.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

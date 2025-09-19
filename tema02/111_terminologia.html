@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1.1. Terminologia | Model Conceptual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Francisco Jav. Jaraba Jurado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">Model Conceptual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Disseny Conceptual de BBDD</a></li>
+   <li><a href="1_modelo_conceptual_representacin_del_mundo_real.html" class="daddy">1. Modelo Conceptual: representación del mundo real</a>
+   <ul class="other-section">
+      <li><a href="11_nivel_conceptual_modelo_entidadrelacin.html" class="daddy">1.1. Nivel Conceptual. Modelo Entidad-Relación</a>
+      <ul class="other-section">
+         <li><a href="111_terminologa.html" class="no-ch">1.1.1. Terminología</a></li>
+      </ul>
+      </li>
+      <li><a href="12_modelo_er_extendido.html" class="daddy">1.2. Modelo E-R Extendido</a>
+      <ul class="other-section">
+         <li><a href="121_tipos_de_relaciones.html" class="no-ch">1.2.1. Tipos de relaciones</a></li>
+         <li><a href="122_generalizacinespecializacin_y_herencia.html" class="no-ch">1.2.2. Generalización/Especialización y Herencia</a></li>
+         <li><a href="123__relaciones_ternarias.html" class="no-ch">1.2.3 - Relaciones Ternarias</a></li>
+         <li><a href="124_agregacin_entidades_asociativas.html" class="no-ch">1.2.4. Agregación. Entidades Asociativas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="1_model_conceptual_representaci_del_mn_real.html" class="current-page-parent daddy">1. Model Conceptual: representació del món real</a>
+   <ul>
+      <li class="current-page-parent"><a href="11_nivell_conceptual_model_entitatrelaci.html" class="current-page-parent daddy">1.1. Nivell Conceptual. Model Entitat-Relació</a>
+      <ul>
+         <li id="active"><a href="111_terminologia.html" class="active no-ch">1.1.1. Terminologia</a></li>
+      </ul>
+      </li>
+      <li><a href="12_model_er_ests.html" class="daddy">1.2. Model E-R Estés</a>
+      <ul class="other-section">
+         <li><a href="121_tipus_de_relacions.html" class="no-ch">1.2.1. Tipus de relacions</a></li>
+         <li><a href="122_generalitzaciespecialitzaci_i_herncia.html" class="no-ch">1.2.2. Generalització/Especialització i Herència</a></li>
+         <li><a href="123_relacions_ternaries.html" class="no-ch">1.2.3. Relacions Ternaries</a></li>
+         <li><a href="124_agregaci_entitats_associatives.html" class="no-ch">1.2.4. Agregació. Entitats associatives</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="11_nivell_conceptual_model_entitatrelaci.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_model_er_ests.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.1.1. Terminologia</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id17">
+<div class="iDevice emphasis0" >
+<div id="ta17_122_2" class="block iDevice_content">
+<div class="exe-text"><p>El model relacional es basa en el concepte matemàtic de <strong>relació</strong>, que es representa gràficament mitjançant una <strong>taula</strong>.</p>
+<h2>Construccions bàsiques</h2>
+<h3 style="padding-left: 30px;">Entitat</h3>
+<p style="padding-left: 30px;">Per <strong>entitat</strong> entenem un <span style="text-decoration: underline;">objecte del món real</span> que podem distingir de la resta d'objectes i del qual ens interessen algunes <span style="text-decoration: underline;">propietats</span>. Alguns exemples són: un empleat, un producte, una assignatura, un préstec bancari, una comanda d'un client, etc.</p>
+<p style="padding-left: 30px;">En el model E-R les entitats <span style="text-decoration: underline;">es representen amb un rectangle</span>. El nom de l'entitat s'escriu en majúscules dins del rectangle (<em>alguns SGBD no accepten els accents en els noms, per la qual cosa és convenient no posar-los</em>).</p>
+<p style="padding-left: 30px;"></p>
+<p style="padding-left: 30px;"><img src="mod_rel_05.png" width="447" height="76" /></p>
+<p></p>
+<h3 style="padding-left: 30px;">Relació</h3>
+<p style="padding-left: 30px;">Es defineix <strong>Relació</strong> (<em>Interrelació</em>) com una <span style="text-decoration: underline;">associació entre entitats</span>. Les relacions es representen en els diagrames del model ER <span style="text-decoration: underline;">mitjançant un rombe</span>. Al costat del rombe s'indica el <span style="text-decoration: underline;">nom de la relació</span> amb lletres majúscules. Exemple: considerem una entitat EMPLEAT i una entitat DESPATX i suposem que als empleats se'ls assignen despatxos on treballar. La relació seria  ASIGNACIO.</p>
+<p style="padding-left: 30px;"><img src="mod_rel_08.png" alt="" width="600" height="88" /></p>
+<p></p>
+<h3 style="padding-left: 30px;">Atribut</h3>
+<p style="padding-left: 30px;">Les <strong>propietats dels objectes</strong> es denominen <strong>atributs</strong>. Per tant, les entitats estan formades per atributs. Per exemple, sobre una entitat EMPLEAT ens pot interessar tindre els següents atributs: dni, nss, nom, cognoms, sou, etc.</p>
+<p style="padding-left: 30px;"><strong>D'entre els atributs</strong> hi haurà un o un conjunt d'ells que <span style="text-decoration: underline;">no es repeteix</span>; a aquest atribut o conjunt d'atributs se'n diu <strong>clau de l'entitat</strong>, (<em>per a l'entitat persona una clau seriosa dni</em>). Els valors de la clau han de ser únics (<em>un dni no pot repetir-se</em>) i estar <span style="text-decoration: underline;">formats pel menor nombre possible d'atributs</span>. Si existeix més d'una possibilitat d'atribut, o conjunt d'atributs, que identifiquen a una entitat, a un se'l denominarà <strong>Clau Primària</strong> (<em>subratllat continu</em>) i als altres <strong>Clau Candidata</strong> (<em>subratllat discontinu</em>).</p>
+<p style="padding-left: 30px;"><img src="mod_rel_06.png" style="float: right; margin: 10px 20px 10px 20px;" width="243" height="90" />Els atributs d'una entitat es representen mitjançant el·lipses o cercles etiquetats, que es connecten per una línia recta a l'entitat o relació que qualifiquen, cadascun dels quals ha de tindre un nom únic i que faça referència al seu contingut. Els noms dels atributs han d'anar en minúscules..</p>
+<p style="padding-left: 30px;"><strong>Cada atribut</strong> té un <span style="text-decoration: underline;">conjunt de valors associats</span> denominat <strong>domini</strong>. El domini defineix tots els valors possibles que pot prendre un atribut.</p>
+<p style="padding-left: 30px;"><img src="mod_rel_09.png" width="418" height="330" /></p>
+<p style="padding-left: 30px;">Els atributs poden ser:</p>
+<ul>
+<li><span style="color: #0000ff;"><strong>Obligatori / Opcional</strong></span>: un <strong>atribut obligatori</strong> és aquell que <span style="text-decoration: underline;">sempre ha d'estar definit</span>, com per exemple, el que identifica a una entitat (<em>En l'entitat EMPLEAT, un atribut obligatori podria ser 'dni', que no es pot deixar buit perquè gràcies a ell s'identifiquen totes i cadascuna de les instàncies d'eixa entitat</em>). Un <strong>atribut opcional</strong>, en canvi, <span style="text-decoration: underline;">pot quedar sense definir per a algunes de les instàncies de l'entitat</span> (<em>per a EMPLEAT un atribut opcional podria ser 'edat', que és un atribut que no és imprescindible per a la identificació de les instàncies de l'entitat</em>).<br /><br /></li>
+<li><strong><span style="color: #0000ff;"><img src="mod_rel_07.png" style="float: right; margin: 10px 20px 10px 20px;" width="290" height="99" />Simples</span> <span style="color: #0000ff;">/ Compostos</span></strong>: un <strong>atribut simple</strong> ( <em>o <strong>atòmic</strong> )</em> és un atribut que <span style="text-decoration: underline;">té un sol component</span>, que <span style="text-decoration: underline;">no es pot dividir en parts</span> més xicotetes que tinguen un significat propi, un exemple podria ser el "dni" d'una persona. Un <strong>atribut compost</strong> és un atribut amb <span style="text-decoration: underline;">diversos components</span>, <span style="text-decoration: underline;">cadascun amb un significat per si mateix</span>. Es representa amb una doble línia de contorn. Per exemple, considerant l'adreça" d'una persona com la unió del carrer on viu, el número i la població. Els atributs compostos es representen amb un cercle connectat amb altres cercles, que representen els components de l'atribut, per una línia. <br /><br /></li>
+<li>
+<p><span style="color: #0000ff;"><strong>Univaluado / Multivaluado</strong></span>: un atribut és <strong>univaluado</strong> si <span style="text-decoration: underline;">té un únic valor</span> per a cada ocurrència d'una entitat. És <strong>multivaluado</strong> si <span style="text-decoration: underline;">pot tindre més d'un valor per a cada unitat</span> (<em>exemple: telefonos</em>). Tots els atributs han de ser univaluados.</p>
+</li>
+<li>
+<p><span style="color: #0000ff;"><strong>Derivat</strong></span>: El seu valor no es guardarà en la taula d'una base de dades ja que<span style="text-decoration: underline;"> s'obté mitjançant un càlcul,</span> un exemple d'atribut derivat o calculat és l'edat, obtinguda a partir d'un altre atribut: la data de naixement.</p>
+</li>
+</ul>
+<p>A vegades interessa reflectir algunes propietats de les interrelacions. Per aquest motiu, <strong>les interrelacions poden tindre també atributs</strong>. Els atributs de les interrelacions tenen un domini, han de prendre valors atòmics i han de ser univaluados.</p>
+<p><img src="mod_rel_12.png" alt="" width="550" height="238" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id22">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Entitats i Relacions</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta22_120_2" class="block iDevice_content">
+<div class="exe-text"><p>El modelo relacional considera que una entidad es un objeto real o abstracción que forma parte del sistema o problema en estudio y que cumple las siguientes propiedades:</p>
+<ul>
+<li>Tiene existencia propia.</li>
+<li>Es distinguible del resto de entidades.</li>
+<li>Las entidades de un mismo tipo están definidas en base a un mismo conjunto de atributos.</li>
+</ul>
+<p>Las entidades pueden ser clasificadas en dos grupos:</p>
+<ul>
+<li><span style="color: #0000ff;"><strong>Entidades Fuertes o Regulares</strong></span>: son aquellas que <strong>tienen existencia por sí mismas</strong>, es decir, su existencia no depende de la existencia de otras entidades. Por ejemplo, en una base de datos hospitalaria, la existencia de instancias concretas de la entidad DOCTOR no depende de la existencia de instancias u objetos de la entidad PACIENTE. En el modelo E/R las entidades fuertes se representan como hemos indicado anteriormente, con el nombre de la entidad encerrado dentro de un rectángulo.<br /><br /></li>
+<li><span style="color: #0000ff;"><strong><img src="mod_rel_10.png" style="float: right; margin-right: 20px; margin-left: 20px;" width="323" height="87" />Entidades débiles</strong></span>: son aquellas <strong>cuya existencia depende de la existencia de otras instancias de entidad</strong>. Por ejemplo, consideremos las entidades EDIFICIO y AULA. Supongamos que puede haber aulas identificadas con la misma numeración pero en edificios diferentes (<em>Aula 1, Aula 2, Aula 3</em>). La numeración de cada aula no identificará completamente cada una de ellas. Para poder identificar completamente un aula es necesario saber también en qué edificio está localizada (<em>Edificio 1, Edificio 2,</em> ...). Por tanto, la existencia de una instancia de una entidad débil depende de la existencia de una instancia de la entidad fuerte con la que se relaciona. Se representan con un rectángulo con doble línea. Las entidades débiles presentan dos tipos de dependencia:
+<ul>
+<li><strong><img src="mod_rel_11.png" style="float: right; margin-right: 20px; margin-left: 20px;" width="377" height="245" />Debilidad por existencia</strong>: entre entidades, si desaparece una instancia de entidad fuerte desaparecerán las instancias de entidad débiles que dependan de la primera. La representación de este tipo de dependencia incluirá una<span style="color: #0000ff;"><strong> E</strong> </span>en el interior de la <span style="color: #0000ff;"><strong>relación débil</strong></span>.
+<p><strong>Debilidad por identificación</strong>: debe darse una dependencia en existencia y además, una ocurrencia de la entidad débil no puede identificarse por sí misma, debiendo hacerse mediante la clave de la entidad fuerte asociada. La representación de este tipo de dependencia incluirá una <span style="color: #0000ff;"><strong>ID</strong></span> en el interior de la <span style="color: #0000ff;"><strong>relación débil</strong></span>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul></ul>
+<p style="padding-left: 30px;">Una debilidad de identificación implica una debilidad de existencia, pero no al contrario.</p>
+<p>Las <strong>relaciones</strong> se denominan <strong>débiles</strong> cuando relacionan una entidad débil con una fuerte o dos entidades débiles entre sí (<em>en este caso, una de las dos entidades débiles actua como entidad fuerte</em>).</p>
+<p>Para describir y definir adecuadamente las relaciones existentes entre entidades, es imprescindible definir los siguientes conceptos:</p>
+<ul>
+<li><span style="color: #008000;"><strong>Grado de una relación</strong></span>: número de entidades que participan en una relación. En función del grado se pueden establecer diferentes tipos de relaciones:
+<ul>
+<li><strong>Relación Unaria o de grado 1</strong>:  participa <strong>una única entidad</strong>. También llamadas <strong>reflexivas o recursivas</strong>.</li>
+<li><strong><a href="mod_rel_13.png" target="_blank" rel="noopener"><img src="mod_rel_13_peq.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="264" height="170" /></a>Relación Binaria o de grado 2</strong>: participan <strong>dos entidades</strong>. En general, tanto en una primera aproximación, como en los sucesivos refinamientos, el esquema conceptual de la base de datos buscará tener sólo este tipo de relaciones.</li>
+<li><strong>Relación Ternaria o de grado 3</strong>: participan <strong>tres entidades al mismo tiempo</strong>.</li>
+<li><strong>Relación N-aria o de grado n</strong>: involucra <strong>n entidades</strong>. Este tipo de relaciones no son usuales y deben ser simplificadas hacia relaciones de menor grado.</li>
+<li><strong>Relación doble</strong>: ocurre cuando <strong>dos entidades</strong> están relacionadas a través de <strong>dos relaciones</strong>. Este tipo de relaciones son complejas de manejar.<br /><br /></li>
+</ul>
+</li>
+<li><span style="color: #008000;"><strong>Cardinalidad de relaciones</strong></span>: es el <strong>número máximo de ocurrencias de cada entidad</strong> que pueden intervenir en una ocurrencia de relación. La cardinalidad vendrá expresada siempre <strong>para relaciones entre dos entidades</strong>. Dependiendo del número de ocurrencias de cada una de las entidades pueden existir relaciones uno a uno, uno a muchos, muchos a uno y muchos a muchos.<br />
+<ul>
+<li><strong><img src="mod_rel_14.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="314" height="264" />Relaciones uno a uno</strong> (<span style="color: #0000ff;"><strong>1:1)</strong></span>. sean las entidades A y B, una instancia u ocurrencia de la entidad A se relaciona únicamente con otra instancia de la entidad B y viceversa. Por ejemplo, para cada ocurrencia de la entidad ALUMNO sólo habrá una ocurrencia relacionada de la entidad EXPEDIENTE y viceversa. O lo que es lo mismo, un alumno tiene un expediente asociado y un expediente sólo pertenece a un único alumno.</li>
+<li><strong>Relaciones uno a muchos</strong> (<span style="color: #0000ff;"><strong>1:N</strong></span>). sean las entidades A y B, <strong>una</strong> ocurrencia de la entidad A se relaciona con <strong>muchas</strong> ocurrencias de la entidad B y una ocurrencia de la entidad B sólo estará relacionada con una única ocurrencia de la entidad A. Por ejemplo, para cada ocurrencia de la entidad DOCENTE puede haber varias ocurrencias de la entidad ASIGNATURA y para varias ocurrencias de la entidad ASIGNATURA sólo habrá una ocurrencia relacionada de la entidad DOCENTE (<em>si se establece que una asignatura sólo puede ser impartida por un único docente</em>). O lo que es lo mismo, un docente puede impartir varias asignaturas y una asignatura sólo puede ser impartida por un único docente.</li>
+<li><strong>Relaciones muchos a uno</strong> (<span style="color: #0000ff;"><strong>N:1</strong></span>). sean las entidades A y B, una ocurrencia de la entidad A está asociada con una única ocurrencia de la entidad B y un ejemplar de la entidad B está relacionado con muchas ocurrencias de la entidad A. Por ejemplo, Un JUGADOR pertenece a un único EQUIPO y a un EQUIPO pueden pertenecer muchos jugadores.</li>
+<li><strong>Relaciones muchos a muchos</strong> (<span style="color: #0000ff;"><strong>M:N</strong></span>). Sean las entidades A y B, un ejemplar de la entidad A está relacionado con muchas ocurrencias de la entidad B y viceversa. Por ejemplo, un alumno puede estar matriculado en varias asignaturas y en una asignatura pueden estar matriculados varios alumnos.<br /><br /></li>
+</ul>
+</li>
+<li><span style="color: #008000;"><strong><img src="mod_rel_15.png" alt="" style="float: right; margin: 10px 20px 10px 20px;" width="371" height="85" />Cardinalidad de las entidades</strong></span>:la <strong>cardinalidad con la que una entidad participa</strong> en una relación especifica el <strong>número mínimo y el número máximo</strong> de correspondencias en las que puede tomar parte cada ejemplar de dicha entidad. Indica el número de relaciones en las que una entidad puede aparecer. Su representación gráfica será una etiqueta del tipo (<span style="color: #0000ff;"><strong>0,1</strong></span>), (<span style="color: #0000ff;"><strong>1,1</strong></span>), (<span style="color: #0000ff;"><strong>0,N</strong></span>) o (<span style="color: #0000ff;"><strong>1,N</strong></span>). El significado del primer y segundo elemento del paréntesis corresponde a <span style="color: #008000;">(<em>cadinalidad mínima</em>, <em>cardinalidad máxima</em>)</span>. El <strong>valor 0</strong> se pondrá cuando la <strong>participación de la entidad sea opcional</strong>. En la imagen, junto a la entidad EQUIPO aparece la etiqueta (0,1), es decir, un JUGADOR pertenece como mínimo a ningún EQUIPO y como máximo a uno <span style="color: #008000;">(0,1)</span>. Junto a la entidad JUGADOR aparece (1, n), es decir, a un EQUIPO pertenece como mínimo un JUGADOR y como máximo varios (1,n). Ten en cuenta que cuando se representa la <strong>cardinalidad de una entidad</strong>, el paréntesis y sus valores <strong>han de colocarse junto a la entidad con la que se relaciona</strong>. Es decir en el lado opuesto a la relación.</li>
+</ul>
+<p style="background-color: cyan; border: 1px solid black; padding: 10px 30px;"><strong>Nota</strong>: la Cardinalidad expresa el número de entidades a las que se puede asociar otra entidad a través de un conjunto de relaciones.</p>
+<p style="padding-left: 30px;"></p>
+<p style="padding-left: 30px;"></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="11_nivell_conceptual_model_entitatrelaci.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_model_er_ests.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

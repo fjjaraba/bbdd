@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.2.4. Agregación. Entidades Asociativas | Model Conceptual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Francisco Jav. Jaraba Jurado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-7"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">Model Conceptual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Disseny Conceptual de BBDD</a></li>
+   <li class="current-page-parent"><a href="1_modelo_conceptual_representacin_del_mundo_real.html" class="current-page-parent daddy">1. Modelo Conceptual: representación del mundo real</a>
+   <ul>
+      <li><a href="11_nivel_conceptual_modelo_entidadrelacin.html" class="daddy">1.1. Nivel Conceptual. Modelo Entidad-Relación</a>
+      <ul class="other-section">
+         <li><a href="111_terminologa.html" class="no-ch">1.1.1. Terminología</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="12_modelo_er_extendido.html" class="current-page-parent daddy">1.2. Modelo E-R Extendido</a>
+      <ul>
+         <li><a href="121_tipos_de_relaciones.html" class="no-ch">1.2.1. Tipos de relaciones</a></li>
+         <li><a href="122_generalizacinespecializacin_y_herencia.html" class="no-ch">1.2.2. Generalización/Especialización y Herencia</a></li>
+         <li><a href="123__relaciones_ternarias.html" class="no-ch">1.2.3 - Relaciones Ternarias</a></li>
+         <li id="active"><a href="124_agregacin_entidades_asociativas.html" class="active no-ch">1.2.4. Agregación. Entidades Asociativas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="1_model_conceptual_representaci_del_mn_real.html" class="daddy">1. Model Conceptual: representació del món real</a>
+   <ul class="other-section">
+      <li><a href="11_nivell_conceptual_model_entitatrelaci.html" class="daddy">1.1. Nivell Conceptual. Model Entitat-Relació</a>
+      <ul class="other-section">
+         <li><a href="111_terminologia.html" class="no-ch">1.1.1. Terminologia</a></li>
+      </ul>
+      </li>
+      <li><a href="12_model_er_ests.html" class="daddy">1.2. Model E-R Estés</a>
+      <ul class="other-section">
+         <li><a href="121_tipus_de_relacions.html" class="no-ch">1.2.1. Tipus de relacions</a></li>
+         <li><a href="122_generalitzaciespecialitzaci_i_herncia.html" class="no-ch">1.2.2. Generalització/Especialització i Herència</a></li>
+         <li><a href="123_relacions_ternaries.html" class="no-ch">1.2.3. Relacions Ternaries</a></li>
+         <li><a href="124_agregaci_entitats_associatives.html" class="no-ch">1.2.4. Agregació. Entitats associatives</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="123__relaciones_ternarias.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="1_model_conceptual_representaci_del_mn_real.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.2.4. Agregación. Entidades Asociativas</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id12">
+<div class="iDevice emphasis0" >
+<div id="ta12_120_2" class="block iDevice_content">
+<div class="exe-text"><p>La <strong>agregación</strong> es una <strong>abstracción</strong> a través de la cual <span style="text-decoration: underline;"><strong>las relaciones se tratan como entidades</strong></span>, siendo utilizada para expresar <strong>relaciones entre relaciones o entre entidades y relaciones</strong>.</p>
+<p><a href="mod_rel_20.png" target="_blank" rel="noopener"><img src="mod_rel_20_peq.png" alt="" style="float: right; margin-right: 20px; margin-left: 20px;" width="253" height="140" /></a>Supongamos un ejemplo en el que hemos de modelar la siguiente situación: una empresa de selección de personal realiza entrevistas a diferentes aspirantes. Puede ser que, de algunas de estas entrevistas a aspirantes, se derive una oferta de empleo, o no. En el siguiente gráfico se representan tres soluciones, las dos primeras erróneas y una tercera correcta, utilizando una agregación.</p>
+<p>Como has podido observar, la <strong>representación</strong> gráfica de una <strong>agregación</strong> se caracteriza por <span style="text-decoration: underline;">englobar con un rectángulo las entidades y relación a abstraer</span>. De este modo, se crea una <strong>nueva entidad agregada</strong> que puede participar en otras relaciones con otras entidades. En este tipo de relación especial de agregación, la <strong>cardinalidad máxima y mínima</strong> de la entidad agregada <strong>siempre</strong> será (1,1) no indicándose por ello en el esquema.</p>
+<p>Su aparición está motivada por los siguientes objetivos:</p>
+<ol>
+<li><strong>Rebajar el grado de una interrelación existente</strong>. Las <span style="text-decoration: underline;">relaciones n-arias</span> (<em>sobretodo las n &gt;= 4</em>) son <span style="text-decoration: underline;">difíciles de manejar</span>. Se puede rebajar el grado de todas nuestras interrelaciones n-arias (n &gt;= 3) y dejarlas todas como binarias.</li>
+<li><strong>Impedir que el grado de una interrelación aumente</strong>. A medidas que realizas un modelo E-R, pueden "<em>aparecer</em>" nuevas entidades que se interrelacionan con las existentes y podrían aumentar el grado de la interrelación, haciéndola incomprensible. Mediante el uso de Entidades Asociativas, mantenemos el grado "<em>a raya</em>".</li>
+</ol>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="123__relaciones_ternarias.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="1_model_conceptual_representaci_del_mn_real.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

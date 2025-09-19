@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.2.1. Tipus de relacions | Model Conceptual </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Francisco Jav. Jaraba Jurado" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">Model Conceptual</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Disseny Conceptual de BBDD</a></li>
+   <li><a href="1_modelo_conceptual_representacin_del_mundo_real.html" class="daddy">1. Modelo Conceptual: representación del mundo real</a>
+   <ul class="other-section">
+      <li><a href="11_nivel_conceptual_modelo_entidadrelacin.html" class="daddy">1.1. Nivel Conceptual. Modelo Entidad-Relación</a>
+      <ul class="other-section">
+         <li><a href="111_terminologa.html" class="no-ch">1.1.1. Terminología</a></li>
+      </ul>
+      </li>
+      <li><a href="12_modelo_er_extendido.html" class="daddy">1.2. Modelo E-R Extendido</a>
+      <ul class="other-section">
+         <li><a href="121_tipos_de_relaciones.html" class="no-ch">1.2.1. Tipos de relaciones</a></li>
+         <li><a href="122_generalizacinespecializacin_y_herencia.html" class="no-ch">1.2.2. Generalización/Especialización y Herencia</a></li>
+         <li><a href="123__relaciones_ternarias.html" class="no-ch">1.2.3 - Relaciones Ternarias</a></li>
+         <li><a href="124_agregacin_entidades_asociativas.html" class="no-ch">1.2.4. Agregación. Entidades Asociativas</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="1_model_conceptual_representaci_del_mn_real.html" class="current-page-parent daddy">1. Model Conceptual: representació del món real</a>
+   <ul>
+      <li><a href="11_nivell_conceptual_model_entitatrelaci.html" class="daddy">1.1. Nivell Conceptual. Model Entitat-Relació</a>
+      <ul class="other-section">
+         <li><a href="111_terminologia.html" class="no-ch">1.1.1. Terminologia</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="12_model_er_ests.html" class="current-page-parent daddy">1.2. Model E-R Estés</a>
+      <ul>
+         <li id="active"><a href="121_tipus_de_relacions.html" class="active no-ch">1.2.1. Tipus de relacions</a></li>
+         <li><a href="122_generalitzaciespecialitzaci_i_herncia.html" class="no-ch">1.2.2. Generalització/Especialització i Herència</a></li>
+         <li><a href="123_relacions_ternaries.html" class="no-ch">1.2.3. Relacions Ternaries</a></li>
+         <li><a href="124_agregaci_entitats_associatives.html" class="no-ch">1.2.4. Agregació. Entitats associatives</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="12_model_er_ests.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="122_generalitzaciespecialitzaci_i_herncia.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.2.1. Tipus de relacions</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id19">
+<div class="iDevice emphasis0" >
+<div id="ta19_121_2" class="block iDevice_content">
+<div class="exe-text"><h2>Relacions Reflexives</h2>
+<p style="padding-left: 30px;">Són <span style="text-decoration: underline;">relacions unàries</span>. És la relació d'una entitat amb ella mateixa. Un exemple podria ser EMPLEADO que poden ser caps dins de l'entitat EMPLEADO, cadascun dels seus elements seran empleats de l'organització, no obstant això, alguns d'ells seran caps de (<em>nom de la relació reflexiva</em>) altres empleats.</p>
+<p style="padding-left: 30px;"><img src="mod_rel_16.png" alt="" width="522" height="182" /></p>
+<h2>Relacions Exclusives</h2>
+<p style="padding-left: 30px;"><img src="mod_rel_17.png" alt="" style="float: right; margin: 5px 20px 5px 20px;" width="265" height="161" />Un tipus d'entitat pot mantindre relacions amb un conjunt d'altres tipus d'entitat, però no sempre aquestes relacions són independents. <span style="text-decoration: underline;">Dos (<em>o més</em>) tipus de relació són exclusius</span>, respecte d'una mena d'entitat que participa en tots dos, <span style="text-decoration: underline;">si cada instància del tipus d'entitat només pot participar en un dels tipus de relació</span>.</p>
+<p style="padding-left: 30px;">Un tipo de entidad puede mantener relaciones con un conjunto de otros tipos de entidad, pero no siempre estas relaciones son independientes. Dos (<em>o más</em>) tipos de relación son exclusivos, respecto de un tipo de entidad que participa en ambos, si <strong>cada instancia del tipo de entidad sólo puede participar en uno de los tipos de relación</strong>.</p>
+<p style="padding-left: 30px;">CONSUME i GASTA  són exclusives respecte del tipus d'entitat VEHICULE VEHICULO</p>
+<p style="padding-left: 30px;"></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="12_model_er_ests.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="122_generalitzaciespecialitzaci_i_herncia.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
